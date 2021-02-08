@@ -6,7 +6,7 @@
  2003  echo "filling the history" >> file.txt
  2004  git add .
  2005  git commit -m "Add a history to the file"
- 2006  git mv file.txt file_old.txt 
+ 2006  git mv file.txt file_old.txt
  2007  git add .
  2008  git commit -m "Rename the file to file_old"
  2009  echo "New file created" > file.txt
@@ -14,3 +14,13 @@
  2011  git commit -m "Create the new file"
  2012  git push
  2013  history
+
+ << akira >>
+ 3490  echo "create akira file" > akira.txt && git add .
+ 3491  git commit -m "Create akira.txt"
+ 3492  echo "some data" >> akira.txt && git add .
+ 3493  mv akira.txt akira_old.txt
+ 3494  git add .
+ 3495  git commit -m "Rename akira.txt to akira_old.txt"
+ 3496  echo "new akira file" > akira.txt && git add .
+ 3497  git commit -m "Create new akira.txt"
