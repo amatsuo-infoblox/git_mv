@@ -1,0 +1,16 @@
+ 1998  git clone git@github.com:ssh2go/git_mv.git
+ 1999  cd git_mv/
+ 2000  echo "file created" > file.txt
+ 2001  git add .
+ 2002  git commit -m "File created"
+ 2003  echo "filling the history" >> file.txt
+ 2004  git add .
+ 2005  git commit -m "Add a history to the file"
+ 2006  git mv file.txt file_old.txt 
+ 2007  git add .
+ 2008  git commit -m "Rename the file to file_old"
+ 2009  echo "New file created" > file.txt
+ 2010  git add .
+ 2011  git commit -m "Create the new file"
+ 2012  git push
+ 2013  history
